@@ -1,4 +1,4 @@
-FROM openresty/openresty:xenial
+FROM openresty/openresty:1.15.8.2-bionic
 
 RUN apt-get update && apt-get install -y gcc make \
     && luarocks install lua-resty-auto-ssl \
